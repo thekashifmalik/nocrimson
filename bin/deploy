@@ -1,0 +1,4 @@
+#!/bin/bash
+set -eo pipefail
+gcloud config set project nocrimson
+exec gsutil cp src/* gs://www.nocrimson.com
