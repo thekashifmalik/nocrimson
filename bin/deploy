@@ -1,4 +1,2 @@
-#!/bin/bash
-set -eo pipefail
-gcloud config set project nocrimson
-exec gsutil cp src/* gs://www.nocrimson.com
+#!/usr/bin/env bash
+exec terraform apply
