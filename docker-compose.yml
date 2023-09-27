@@ -1,0 +1,6 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:1.25
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
